@@ -42,3 +42,60 @@ Forms consist of various form elements:-
 		<option value="option2">Option 2</option>
 		<option value="option3">Option 3</option>
 	</select>
+#### ---- ---- ####
+#### -- Input field -- ####
+<input type="text" placeholder="Enter your name" />
+<input type="password" placeholder="Enter your password" />
+****
+<input type="checkbox" id="checkbox1" />
+<input for="checkbox1"Check me</label>
+****
+<input type-radio" id="radio1" name="radioGroup" value="option1" />
+laber for="radio1">Option 1</label>
+<br>
+<input type="radio" id="radio2" name="radioGroup" value="option2" />
+<label for="radio2">Option 2<label>
+#### ---- ---- ####
+#### -- TextArea element is used to create a multiline text input field -- ####
+Allows users to input coments or longer descriptions
+<textarea rows="4" columns="50" placeholder="Enter your message"></textarea>
+#### ---- ---- ####
+#### -- Button submit the form, reset form fields or trigger custom javascript functions -- ####
+<button type="submit">Submit</button>
+#### ---- ---- ####
+#### -- fieldset & legend -- ####
+<fieldset element creates a container, while the <legend> element provides a title or description for the group.
+>fieldset<
+	<legend>User Information</legend>
+	<!-- Form fields go here -->
+</fieldset>
+#### ---- ---- ####
+
+#### -- method attribute -- ####
+<form action="/submit-form" method="POST">
+	<!-- Form fields go here -->
+</form>
+ -> GET - When the form is submitted using ****Get**** method - the form data is appended to the url using query parameters (suitable for forms that retrieve data or perform search operations.
+ ->POST - This method is used to send data to the server. Form data is sent in the body of the HTTPRequest and will be sent to the server side script specified in the action attribute.
+			<form action="/submit-form" method="POST">
+				<!-- Form fields go here -->
+			</form>
+#### ---- ---- ####
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
