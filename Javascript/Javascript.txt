@@ -1,0 +1,44 @@
+
+Important links etc
+
+1. look at the code from book "Learning React"  - from 2023.
+
+#### -- Promises -- ####
+Define :- 
+const getFakeMembers = count => new Promise((resolves, rejects) => {
+const api = `https://api.randomuser.me/?nat=US&results=${count}`
+const request = new XMLHttpRequest()
+request.open('GET', api)
+request.onload = () =>
+(request.status === 200) ?
+resolves(JSON.parse(request.response).results) :
+reject(Error(request.statusText))
+request.onerror = (err) => rejects(err)
+request.send()
+})
+
+Use:- 
+getFakeMembers(5).then(
+members => console.log(members),
+err => console.error(
+new Error("cannot load members from randomuser.me"))
+)
+
+
+#### ---- ---- ####
+
+#### -- HTML Forms -- ####
+Forms consist of various form elements:-
+	Form element acts ass the cotainer for all the form elements.
+	Input fields
+	Checkboxes
+	Buttons
+	Drop down menus
+	
+#### ---- ---- ####
+#### ---- Drop Down menus ---- ####
+	<select>
+		<option value="option1">Option 1</option>
+		<option value="option2">Option 2</option>
+		<option value="option3">Option 3</option>
+	</select>
