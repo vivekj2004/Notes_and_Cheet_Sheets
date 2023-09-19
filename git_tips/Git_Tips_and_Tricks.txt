@@ -1,5 +1,5 @@
 
-#### -- If you want to add from a local repository -- ####
+#### -- If you want to add (first time) from a local repository -- ####
 PS C:\Transfer\Coding\Notes and Cheat sheets> git remote add origin https://github.com/vivekj2004/Notes_and_Cheet_Sheets.git
 PS C:\Transfer\Coding\Notes and Cheat sheets> git branch -M main
 PS C:\Transfer\Coding\Notes and Cheat sheets> git push -u origin main
